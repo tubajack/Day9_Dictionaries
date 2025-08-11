@@ -25,7 +25,7 @@ while biddingComplete is False:
 
     if proceed == "yes":
         clear_screen()
-        print("\n" * 100)
+        print("\n" * 50)
     elif proceed == "no":
         biddingComplete = True
         determineHighestBidder(auction_bids)
