@@ -21,10 +21,11 @@ while biddingComplete is False:
     price = int(input("What is the bid? $"))
     auction_bids[name] = price
 
-    proceed = input("Are there any other bidders? Click 'yes' or 'no'. \n")
+    proceed = input("Are there any other bidders? Click 'yes' or 'no'. \n").lower()
 
     if proceed == "yes":
         clear_screen()
+        print("\n" * 100)
     elif proceed == "no":
         biddingComplete = True
         determineHighestBidder(auction_bids)
