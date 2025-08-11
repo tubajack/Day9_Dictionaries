@@ -18,7 +18,7 @@ def determineHighestBidder(recordBid):
 
 while biddingComplete is False:
     name = input("What is your name? ")
-    price = int(input("What is the bid? "))
+    price = int(input("What is the bid? $"))
     auction_bids[name] = price
 
     proceed = input("Are there any other bidders? Click 'yes' or 'no'. \n")
